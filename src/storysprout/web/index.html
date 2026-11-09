@@ -184,18 +184,26 @@ async function doIntervene() {
 }
 $("insBtn").onclick = doIntervene;
 
+function outUrl(p) {
+  if (!p) return "";
+  const norm = String(p).replace(/\\/g, "/");
+  const i = norm.indexOf("/outputs/");
+  return i >= 0 ? norm.slice(i) : "";   // 服务器以 /outputs/ 前缀提供静态文件
+}
+
+function fileName(p) { return String(p).split("\\").pop().split("/").pop(); }
+
 function renderArts(a) {
   if (!a.images && !a.video) return;
   $("arts").style.display = "block";
   if (a.images) {
-    $("imgs").innerHTML = a.images.map(p =>
-      `<img src="/${p.replace(/\\\\/g, "/").split("/outputs/")[1] ? "outputs/" + p.replace(/\\\\/g, "/").split("/outputs/")[1] : ""}" loading="lazy">`).join("");
+    $("imgs").innerHTML = a.images.map(p => `<img src="${outUrl(p)}" loading="lazy">`).join("");
   }
-  if (a.audio) $("player").src = "/outputs/" + a.audio.replace(/\\\\/g, "/").split("/outputs/")[1];
-  if (a.video) { $("film").src = "/outputs/" + a.video.replace(/\\\\/g, "/").split("/outputs/")[1]; $("film").style.display = "block"; }
+  if (a.audio) $("player").src = outUrl(a.audio);
+  if (a.video) { $("film").src = outUrl(a.video); $("film").style.display = "block"; }
   $("links").innerHTML = [
-    a.book ? `<a href="/outputs/${a.book.replace(/\\\\/g, "/").split("/outputs/")[1]}" target="_blank">📕 绘本 PDF</a>` : "",
-    a.story_file ? `<a href="#" onclick="return false">📄 ${a.story_file.split("\\").pop()}</a>` : "",
+    a.book ? `<a href="${outUrl(a.book)}" target="_blank">📕 绘本 PDF</a>` : "",
+    a.story_file ? `<a href="#" onclick="return false">📄 ${fileName(a.story_file)}</a>` : "",
   ].join("");
 }
 
@@ -204,7 +212,7 @@ async function poll(force) {
   if (s.steps.length) {
     $("steps").innerHTML = s.steps.map(t =>
       `<li><span class="dot ${t.status}"></span><b>${t.tool}</b>
-       <span style="color:var(--sub)">${t.summary || ""}</span>
+       <span style="color:var(--sub)">${(t.summary || "").replace(/[A-Za-z]:\\\\[^,，]{10,}/g, "…").slice(0, 90)}</span>
        <span class="meta">${t.elapsed}s · ${t.status}</span></li>`).join("");
   }
   $("events").textContent = s.events.join("\n");
