@@ -48,10 +48,16 @@ def split_sentences(text: str) -> list[str]:
 
 
 def assign_voice(sentence: str, characters) -> tuple[str, str]:
-    """返回 (角色名, voice_key)。说话人在引号前出现则归给他，否则旁白。"""
-    for ch in characters:
-        if ch.name in sentence.split("“")[0].split("\"")[0]:
-            return ch.name, ch.voice
+    """返回 (角色名, voice_key)。
+
+    只有当句子含对白（引号）且角色名出现在引号之前时才归给该角色；
+    叙述句一律旁白——否则"朵朵的帽子飞了"会被误判成朵朵在说话。
+    """
+    if "“" in sentence or '"' in sentence:
+        prefix = sentence.split("“")[0].split('"')[0]
+        for ch in characters:
+            if ch.name and ch.name in prefix:
+                return ch.name, ch.voice
     return "narrator", "narrator"
 
 
