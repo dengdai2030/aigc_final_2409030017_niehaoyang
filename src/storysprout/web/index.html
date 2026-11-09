@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>故事精灵 StorySprout · 多模态故事创作 Agent</title>
+<style>
+  :root {
+    --bg: #faf6ef; --panel: #ffffff; --ink: #3a3230; --sub: #8a7f76;
+    --accent: #e8833a; --accent-soft: #fdeadd; --ok: #4f9d69; --err: #c65b4e;
+    --line: #eee4d8; --radius: 14px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: var(--bg); color: var(--ink); min-height: 100vh; padding: 28px 20px 60px;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 26px; }
+  header h1 { font-size: 30px; letter-spacing: 1px; }
+  header h1 span { color: var(--accent); }
+  header p { color: var(--sub); margin-top: 6px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: 380px 1fr; gap: 18px; align-items: start; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 20px; box-shadow: 0 2px 10px rgba(120, 90, 60, .06);
+  }
+  .card h2 { font-size: 16px; margin-bottom: 14px; color: var(--accent); }
+  label { display: block; font-size: 13px; color: var(--sub); margin: 12px 0 4px; }
+  input, select {
+    width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 9px;
+    font-size: 14px; background: #fffdf9; color: var(--ink);
+  }
+  input:focus, select:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); }
+  button {
+    width: 100%; margin-top: 18px; padding: 12px; border: 0; border-radius: 10px;
+    background: var(--accent); color: #fff; font-size: 16px; cursor: pointer; font-weight: 600;
+  }
+  button:hover { filter: brightness(1.06); }
+  button:disabled { background: #d8cfc4; cursor: not-allowed; }
+  .row { display: flex; gap: 10px; }
+  .row > * { flex: 1; }
+  #steps { list-style: none; }
+  #steps li {
+    display: flex; align-items: center; gap: 10px; padding: 9px 10px;
+    border-bottom: 1px dashed var(--line); font-size: 14px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: #d8cfc4; flex: none; }
+  .dot.running { background: #f0b23e; animation: pulse 1s infinite alternate; }
+  .dot.done { background: var(--ok); }
+  .dot.failed { background: var(--err); }
+  @keyframes pulse { from { opacity: .4; } to { opacity: 1; } }
+  .meta { color: var(--sub); font-size: 12px; margin-left: auto; white-space: nowrap; }
+  #events {
+    margin-top: 12px; max-height: 180px; overflow: auto; font-size: 12px; color: var(--sub);
+    background: #faf6ef; border-radius: 9px; padding: 10px; line-height: 1.8;
+  }
+  #usage { font-size: 13px; color: var(--sub); margin-top: 10px; }
+  .arts { display: none; margin-top: 6px; }
+  .arts img {
+    width: 100%; border-radius: 10px; border: 1px solid var(--line); display: block; margin: 8px 0;
+  }
+  .arts .links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+  .arts a {
+    display: inline-block; padding: 8px 14px; background: var(--accent-soft); color: var(--accent);
+    border-radius: 9px; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  video { width: 100%; border-radius: 10px; margin-top: 10px; background: #000; }
+  audio { width: 100%; margin-top: 10px; }
+  .intervene { display: flex; gap: 8px; margin-top: 16px; }
+  .intervene input { flex: 1; }
+  .intervene button { width: auto; margin: 0; padding: 9px 18px; font-size: 14px; }
+  .chips { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  .chip {
+    font-size: 12px; padding: 5px 12px; border-radius: 99px; background: #faf6ef;
+    border: 1px solid var(--line); color: var(--sub); cursor: pointer;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .empty { color: var(--sub); font-size: 14px; text-align: center; padding: 40px 0; }
+  .banner {
+    display: none; margin-top: 14px; padding: 10px 14px; border-radius: 9px; font-size: 13px;
+    background: var(--accent-soft); color: var(--accent);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>故事精灵 <span>StorySprout</span></h1>
+    <p>输入一个创意，Agent 自动产出 绘本 + 有声书 + 短视频 · 创作中途可随时干预</p>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>① 开始一个故事</h2>
+      <label>故事创意</label>
+      <input id="idea" value="一段关于勇气的小小太空冒险" placeholder="例如：一颗迷路的星星想回家">
+      <div class="row">
+        <div><label>主角</label><input id="protagonist" value="朵朵"></div>
+        <div><label>年龄</label><input id="age" type="number" value="6" min="3" max="12"></div>
+      </div>
+      <div class="row">
+        <div><label>世界</label>
+          <select id="scene">
+            <option>太空</option><option selected>森林</option><option>海洋</option>
+            <option>城市</option><option>沙漠</option>
+          </select>
+        </div>
+        <div><label>主题</label>
+          <select id="theme">
+            <option>勇气与友谊</option><option>诚实与信任</option><option>分享与感恩</option>
+            <option>坚持与耐心</option>
+          </select>
+        </div>
+      </div>
+      <label>场景数量：<span id="nsVal">6</span></label>
+      <input id="n_scenes" type="range" min="4" max="8" value="6">
+      <button id="createBtn">✨ 让 Agent 开始创作</button>
+      <div id="usageBox"><p id="usage">本次成本：待统计</p></div>
+    </div>
+
+    <div class="card">
+      <h2>② 创作进度（Agent 规划 → 工具执行 → 观测）</h2>
+      <ul id="steps"><li class="empty">还没有任务。填好左边表单，点「让 Agent 开始创作」。</li></ul>
+      <div id="events"></div>
+      <div class="intervene">
+        <input id="ins" placeholder="干预示例：把主角改成朵拉 / 场景改成森林">
+        <button id="insBtn">干预</button>
+      </div>
+      <div class="chips">
+        <span class="chip" data-ins="把主角改成朵拉">把主角改成朵拉</span>
+        <span class="chip" data-ins="年龄改成7岁">年龄改成7岁</span>
+        <span class="chip" data-ins="场景改成森林">场景改成森林</span>
+        <span class="chip" data-ins="主题改成坚持">主题改成坚持</span>
+      </div>
+      <div id="banner" class="banner"></div>
+
+      <div class="arts" id="arts">
+        <h2 style="margin-top:18px">③ 产物</h2>
+        <div id="imgs"></div>
+        <audio id="player" controls></audio>
+        <video id="film" controls></video>
+        <div class="links" id="links"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+let lastStepCount = -1;
+
+$("n_scenes").oninput = e => $("nsVal").textContent = e.target.value;
+document.querySelectorAll(".chip").forEach(c => c.onclick = () => { $("ins").value = c.dataset.ins; doIntervene(); });
+
+async function post(url, body) {
+  const r = await fetch(url, {method: "POST", headers: {"Content-Type": "application/json"},
+                              body: JSON.stringify(body || {})});
+  return r.json();
+}
+
+$("createBtn").onclick = async () => {
+  $("createBtn").disabled = true; lastStepCount = -1;
+  const res = await post("/api/create", {
+    idea: $("idea").value, protagonist: $("protagonist").value, age: +$("age").value,
+    scene: $("scene").value, theme: $("theme").value, n_scenes: +$("n_scenes").value,
+  });
+  if (!res.ok) { $("banner").style.display = "block"; $("banner").textContent = res.error; $("createBtn").disabled = false; }
+  poll();
+};
+
+async function doIntervene() {
+  const ins = $("ins").value.trim();
+  if (!ins) return;
+  $("banner").style.display = "block";
+  $("banner").textContent = "⏳ 干预执行中：只重跑受影响的步骤…";
+  const res = await post("/api/intervene", {instruction: ins});
+  $("banner").textContent = res.ok
+    ? `✅ 已重算：${res.affected.join(" → ")}（产物前缀 ${res.output_tag}）`
+    : `⚠️ ${res.reason || res.error}`;
+  $("ins").value = "";
+  poll(true);
+}
+$("insBtn").onclick = doIntervene;
+
+function renderArts(a) {
+  if (!a.images && !a.video) return;
+  $("arts").style.display = "block";
+  if (a.images) {
+    $("imgs").innerHTML = a.images.map(p =>
+      `<img src="/${p.replace(/\\\\/g, "/").split("/outputs/")[1] ? "outputs/" + p.replace(/\\\\/g, "/").split("/outputs/")[1] : ""}" loading="lazy">`).join("");
+  }
+  if (a.audio) $("player").src = "/outputs/" + a.audio.replace(/\\\\/g, "/").split("/outputs/")[1];
+  if (a.video) { $("film").src = "/outputs/" + a.video.replace(/\\\\/g, "/").split("/outputs/")[1]; $("film").style.display = "block"; }
+  $("links").innerHTML = [
+    a.book ? `<a href="/outputs/${a.book.replace(/\\\\/g, "/").split("/outputs/")[1]}" target="_blank">📕 绘本 PDF</a>` : "",
+    a.story_file ? `<a href="#" onclick="return false">📄 ${a.story_file.split("\\").pop()}</a>` : "",
+  ].join("");
+}
+
+async function poll(force) {
+  const s = await (await fetch("/api/state")).json();
+  if (s.steps.length) {
+    $("steps").innerHTML = s.steps.map(t =>
+      `<li><span class="dot ${t.status}"></span><b>${t.tool}</b>
+       <span style="color:var(--sub)">${t.summary || ""}</span>
+       <span class="meta">${t.elapsed}s · ${t.status}</span></li>`).join("");
+  }
+  $("events").textContent = s.events.join("\n");
+  $("usage").textContent = "本次成本：" + s.usage;
+  if (s.artifacts && (force || s.artifacts.video || s.artifacts.audio)) renderArts(s.artifacts);
+  if (!s.busy && s.started) {
+    $("createBtn").disabled = false;
+    if (lastStepCount >= 0 && s.steps.length === lastStepCount && !force) return;
+  }
+  lastStepCount = s.steps.length;
+  setTimeout(poll, 1500);
+}
+poll();
+</script>
+</body>
+</html>

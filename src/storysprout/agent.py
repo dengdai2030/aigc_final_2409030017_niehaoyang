@@ -211,6 +211,9 @@ class StoryAgent:
             # 干预后 story_file 指向副本
             if tool_name != "write_story" and "story_file" in args and not args["story_file"]:
                 args["story_file"] = self.state.get("story_file", "")
+            # compose_video 的时间轴总是取最新一次 voice 的产物
+            if tool_name == "compose_video" and not args.get("timeline_file"):
+                args["timeline_file"] = self.state.get("timeline", "")
             self._exec(step)
         return {"ok": True, "changed": changed, "affected": affected, "output_tag": tag}
 

@@ -1,0 +1,179 @@
+{
+  "audio_file": "web_干预后_audiobook.mp3",
+  "total_duration": 101.65,
+  "title": "《海洋里的会发光的月亮贝壳》",
+  "entries": [
+    {
+      "scene_id": 1,
+      "text": "朵拉今年6岁，最爱做的事，就是趴在窗边想深海里的一颗珍珠的样子。",
+      "speaker": "朵拉",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 0.0,
+      "dur": 6.912
+    },
+    {
+      "scene_id": 1,
+      "text": "这天夜里，朵拉在日记本的最后一页写下：“我想去看看深海。",
+      "speaker": "朵拉",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 7.192,
+      "dur": 6.12
+    },
+    {
+      "scene_id": 1,
+      "text": "”没想到字刚写完，书桌上的小台灯轻轻晃了三下，一个巴掌大的光团从灯罩里钻了出来。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 13.592,
+      "dur": 8.616
+    },
+    {
+      "scene_id": 1,
+      "text": "“我是墨墨，光里住着的声音。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 22.488,
+      "dur": 3.144
+    },
+    {
+      "scene_id": 1,
+      "text": "”光团眨了眨，“你写下的愿望，我帮你实现一半，另一半，要你自己走。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 25.912,
+      "dur": 6.696
+    },
+    {
+      "scene_id": 1,
+      "text": "”",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 32.888,
+      "dur": 0.8
+    },
+    {
+      "scene_id": 2,
+      "text": "可是走到一半，意外发生了——洋流把小船推进了黑水沟。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "start": 33.968,
+      "dur": 5.016
+    },
+    {
+      "scene_id": 2,
+      "text": "四周安静得能听见心跳，墨墨的光也变得忽明忽暗。",
+      "speaker": "墨墨",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "start": 39.264,
+      "dur": 4.608
+    },
+    {
+      "scene_id": 2,
+      "text": "“别怕，”朵拉深吸一口气，把声音放得又稳又慢，“我们先找一块能站住的地方。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "start": 44.152,
+      "dur": 6.408
+    },
+    {
+      "scene_id": 2,
+      "text": "”",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "start": 50.84,
+      "dur": 0.8
+    },
+    {
+      "scene_id": 3,
+      "text": "等待的时间里，朵拉有点想家了，鼻子酸酸的。",
+      "speaker": "朵拉",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "start": 51.92,
+      "dur": 5.352
+    },
+    {
+      "scene_id": 3,
+      "text": "墨墨把光调得暖暖的：“害怕不丢人，害怕说明你在乎。",
+      "speaker": "墨墨",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "start": 57.552,
+      "dur": 6.744
+    },
+    {
+      "scene_id": 3,
+      "text": "”朵拉想了想，从口袋里摸出出发时带的小东西，握在手心里，慢慢就不抖了。",
+      "speaker": "朵拉",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "start": 64.576,
+      "dur": 8.112
+    },
+    {
+      "scene_id": 4,
+      "text": "深海的尽头，朵拉看到了那片只属于勇敢者的风景，风把笑声送出去很远。",
+      "speaker": "朵拉",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "start": 72.968,
+      "dur": 7.272
+    },
+    {
+      "scene_id": 4,
+      "text": "回家的路上，朵拉把一块会发光的月亮贝壳的故事讲给墨墨听，两个人约好下一次一起去更远的地方。",
+      "speaker": "朵拉",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "start": 80.52,
+      "dur": 9.48
+    },
+    {
+      "scene_id": 4,
+      "text": "那天晚上，日记本翻回最后一页，朵拉在愿望下面添了一行字：“原来分享与感恩，是自己一步一步走出来的。",
+      "speaker": "朵拉",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "start": 90.28,
+      "dur": 10.008
+    },
+    {
+      "scene_id": 4,
+      "text": "”",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "start": 100.568,
+      "dur": 0.8
+    }
+  ],
+  "tts_provider": "edge",
+  "created_at": "2026-11-09 22:29:31"
+}
