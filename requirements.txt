@@ -1,0 +1,11 @@
+# Python
+Pillow>=10.0
+edge-tts>=7.0
+imageio-ffmpeg>=0.5
+openai>=1.0
+requests>=2.3
+
+# 说明：
+# - openai/requests 仅在配置了 LLM_API_KEY（在线模式）时使用；
+# - 未配置时项目自动进入离线降级模式，以上依赖也几乎不被触发；
+# - ffmpeg 无需单独安装，imageio-ffmpeg 会自带静态二进制。

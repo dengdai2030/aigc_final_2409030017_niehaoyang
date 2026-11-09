@@ -1,0 +1,279 @@
+{
+  "audio_file": "prototype_audiobook.mp3",
+  "total_duration": 148.02,
+  "title": "《太空里的会唱歌的星核水晶》",
+  "entries": [
+    {
+      "scene_id": 1,
+      "text": "朵朵今年6岁，最爱做的事，就是趴在窗边想一段关于勇气的小小太空冒险的样子。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 0.0,
+      "dur": 8.136
+    },
+    {
+      "scene_id": 1,
+      "text": "这天夜里，朵朵在日记本的最后一页写下：“我想去看看星际。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 8.416,
+      "dur": 6.072
+    },
+    {
+      "scene_id": 1,
+      "text": "”没想到字刚写完，书桌上的小台灯轻轻晃了三下，一个巴掌大的光团从灯罩里钻了出来。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 14.768,
+      "dur": 8.616
+    },
+    {
+      "scene_id": 1,
+      "text": "“我是布布，光里住着的声音。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 23.664,
+      "dur": 3.144
+    },
+    {
+      "scene_id": 1,
+      "text": "”光团眨了眨，“你写下的愿望，我帮你实现一半，另一半，要你自己走。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 27.088,
+      "dur": 6.696
+    },
+    {
+      "scene_id": 1,
+      "text": "”",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-4%",
+      "pitch": "+0Hz",
+      "start": 34.064,
+      "dur": 0.8
+    },
+    {
+      "scene_id": 2,
+      "text": "第二天一早，朵朵背上小包出发了。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+4%",
+      "pitch": "+0Hz",
+      "start": 35.144,
+      "dur": 3.432
+    },
+    {
+      "scene_id": 2,
+      "text": "星际的风带着流星的味道。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+4%",
+      "pitch": "+0Hz",
+      "start": 38.856,
+      "dur": 2.736
+    },
+    {
+      "scene_id": 2,
+      "text": "布布飘在前面带路，一路上把行星环指给朵朵看。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+4%",
+      "pitch": "+0Hz",
+      "start": 41.872,
+      "dur": 4.8
+    },
+    {
+      "scene_id": 2,
+      "text": "“原来星际比我想的还要大！",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+4%",
+      "pitch": "+0Hz",
+      "start": 46.952,
+      "dur": 2.52
+    },
+    {
+      "scene_id": 2,
+      "text": "”朵朵越走越快，影子在身后跳格子。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+4%",
+      "pitch": "+0Hz",
+      "start": 49.752,
+      "dur": 3.696
+    },
+    {
+      "scene_id": 2,
+      "text": "他们约好：天黑前赶到星际的深处，看一眼只有勇敢的人才能看见的风景。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+4%",
+      "pitch": "+0Hz",
+      "start": 53.728,
+      "dur": 6.84
+    },
+    {
+      "scene_id": 3,
+      "text": "可是走到一半，意外发生了——推进器在陨石带里熄了火。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "start": 60.848,
+      "dur": 4.992
+    },
+    {
+      "scene_id": 3,
+      "text": "四周安静得能听见心跳，布布的光也变得忽明忽暗。",
+      "speaker": "布布",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "start": 66.12,
+      "dur": 4.704
+    },
+    {
+      "scene_id": 3,
+      "text": "“别怕，”朵朵深吸一口气，把声音放得又稳又慢，“我们先找一块能站住的地方。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "start": 71.104,
+      "dur": 6.432
+    },
+    {
+      "scene_id": 3,
+      "text": "”",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+10%",
+      "pitch": "+4Hz",
+      "start": 77.816,
+      "dur": 0.8
+    },
+    {
+      "scene_id": 4,
+      "text": "等待的时间里，朵朵有点想家了，鼻子酸酸的。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "start": 78.896,
+      "dur": 5.352
+    },
+    {
+      "scene_id": 4,
+      "text": "布布把光调得暖暖的：“害怕不丢人，害怕说明你在乎。",
+      "speaker": "布布",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "start": 84.528,
+      "dur": 6.336
+    },
+    {
+      "scene_id": 4,
+      "text": "”朵朵想了想，从口袋里摸出出发时带的小东西，握在手心里，慢慢就不抖了。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "start": 91.144,
+      "dur": 8.088
+    },
+    {
+      "scene_id": 5,
+      "text": "就在这时，一枚会唱歌的星核水晶亮了起来，像有人在对朵朵轻声说：往这边走。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+2%",
+      "pitch": "+2Hz",
+      "start": 99.512,
+      "dur": 7.512
+    },
+    {
+      "scene_id": 5,
+      "text": "朵朵和布布顺着光，一步、一步，稳稳地穿过了最难的那段路。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "+2%",
+      "pitch": "+2Hz",
+      "start": 107.304,
+      "dur": 6.072
+    },
+    {
+      "scene_id": 5,
+      "text": "“你看，”布布笑了，“另一半愿望，你自己走到了。",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+2%",
+      "pitch": "+2Hz",
+      "start": 113.656,
+      "dur": 4.44
+    },
+    {
+      "scene_id": 5,
+      "text": "”",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+2%",
+      "pitch": "+2Hz",
+      "start": 118.376,
+      "dur": 0.8
+    },
+    {
+      "scene_id": 6,
+      "text": "星际的尽头，朵朵看到了那片只属于勇敢者的风景，风把笑声送出去很远。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "start": 119.456,
+      "dur": 7.2
+    },
+    {
+      "scene_id": 6,
+      "text": "回家的路上，朵朵把一枚会唱歌的星核水晶的故事讲给布布听，两个人约好下一次一起去更远的地方。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "start": 126.936,
+      "dur": 9.408
+    },
+    {
+      "scene_id": 6,
+      "text": "那天晚上，日记本翻回最后一页，朵朵在愿望下面添了一行字：“原来勇气与友谊，是自己一步一步走出来的。",
+      "speaker": "朵朵",
+      "voice": "zh-CN-XiaoyiNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "start": 136.624,
+      "dur": 10.032
+    },
+    {
+      "scene_id": 6,
+      "text": "”",
+      "speaker": "narrator",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-2%",
+      "pitch": "+2Hz",
+      "start": 146.936,
+      "dur": 0.8
+    }
+  ],
+  "tts_provider": "edge",
+  "created_at": "2026-11-09 22:16:39"
+}
