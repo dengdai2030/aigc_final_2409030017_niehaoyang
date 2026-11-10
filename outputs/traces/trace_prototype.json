@@ -69,7 +69,7 @@
   },
   {
     "kind": "observe",
-    "msg": "#1 write_story done 0.03s story_file=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\data\\stor…、source=composer、title=《太空里的会唱歌的星核水晶》",
+    "msg": "#1 write_story done 0.03s story_file=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\data\\stor…、source=composer、title=《太空里的会唱歌的星核水晶》",
     "ts": 1794233665.628
   },
   {
@@ -88,18 +88,18 @@
     },
     "status": "done",
     "result": {
-      "story_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\data\\stories\\prototype_story.json",
+      "story_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\data\\stories\\prototype_story.json",
       "source": "composer",
       "title": "《太空里的会唱歌的星核水晶》",
       "scenes": 6
     },
     "error": "",
     "elapsed": 0.03,
-    "summary": "story_file=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\data\\stor…、source=composer、title=《太空里的会唱歌的星核水晶》"
+    "summary": "story_file=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\data\\stor…、source=composer、title=《太空里的会唱歌的星核水晶》"
   },
   {
     "kind": "act",
-    "msg": "#2 illustrate({\"story_file\": \"C:\\\\Users\\\\85712\\\\Desktop\\\\AIGC作业_第1-8周_刘星宝\\\\aigc_final_学号待补_刘星宝\\\\data\\\\s…)",
+    "msg": "#2 illustrate({\"story_file\": \"C:\\\\Users\\\\85712\\\\Desktop\\\\AIGC作业_第1-15周_聂浩洋\\\\第09-15周_课程设计\\\\data\\\\s…)",
     "ts": 1794233665.628
   },
   {
@@ -111,17 +111,17 @@
     "idx": 2,
     "tool": "illustrate",
     "args": {
-      "story_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\data\\stories\\prototype_story.json"
+      "story_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\data\\stories\\prototype_story.json"
     },
     "status": "done",
     "result": {
       "images": [
-        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\images\\scene01.png",
-        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\images\\scene02.png",
-        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\images\\scene03.png",
-        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\images\\scene04.png",
-        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\images\\scene05.png",
-        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\images\\scene06.png"
+        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\images\\scene01.png",
+        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\images\\scene02.png",
+        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\images\\scene03.png",
+        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\images\\scene04.png",
+        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\images\\scene05.png",
+        "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\images\\scene06.png"
       ],
       "count": 6,
       "consistency": "seed=20261109 + 角色特征卡"
@@ -132,83 +132,83 @@
   },
   {
     "kind": "act",
-    "msg": "#3 voice({\"story_file\": \"C:\\\\Users\\\\85712\\\\Desktop\\\\AIGC作业_第1-8周_刘星宝\\\\aigc_final_学号待补_刘星宝\\\\data\\\\s…)",
+    "msg": "#3 voice({\"story_file\": \"C:\\\\Users\\\\85712\\\\Desktop\\\\AIGC作业_第1-15周_聂浩洋\\\\第09-15周_课程设计\\\\data\\\\s…)",
     "ts": 1794233666.348
   },
   {
     "kind": "observe",
-    "msg": "#3 voice done 133.64s audio=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\a…、timeline=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\a…、duration=148.02",
+    "msg": "#3 voice done 133.64s audio=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\a…、timeline=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\a…、duration=148.02",
     "ts": 1794233799.988
   },
   {
     "idx": 3,
     "tool": "voice",
     "args": {
-      "story_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\data\\stories\\prototype_story.json",
+      "story_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\data\\stories\\prototype_story.json",
       "out_name": "prototype_audiobook.mp3"
     },
     "status": "done",
     "result": {
-      "audio": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\audio\\prototype_audiobook.mp3",
-      "timeline": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\audio\\prototype_audiobook_timeline.json",
+      "audio": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\audio\\prototype_audiobook.mp3",
+      "timeline": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\audio\\prototype_audiobook_timeline.json",
       "duration": 148.02,
       "sentences": 27,
       "tts_provider": "edge"
     },
     "error": "",
     "elapsed": 133.64,
-    "summary": "audio=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\a…、timeline=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\a…、duration=148.02"
+    "summary": "audio=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\a…、timeline=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\a…、duration=148.02"
   },
   {
     "kind": "act",
-    "msg": "#4 compose_video({\"timeline_file\": \"C:\\\\Users\\\\85712\\\\Desktop\\\\AIGC作业_第1-8周_刘星宝\\\\aigc_final_学号待补_刘星宝\\\\outp…)",
+    "msg": "#4 compose_video({\"timeline_file\": \"C:\\\\Users\\\\85712\\\\Desktop\\\\AIGC作业_第1-15周_聂浩洋\\\\第09-15周_课程设计\\\\outp…)",
     "ts": 1794233799.988
   },
   {
     "kind": "observe",
-    "msg": "#4 compose_video done 37.85s video=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\v…、duration=148.02",
+    "msg": "#4 compose_video done 37.85s video=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\v…、duration=148.02",
     "ts": 1794233837.841
   },
   {
     "idx": 4,
     "tool": "compose_video",
     "args": {
-      "timeline_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\audio\\prototype_audiobook_timeline.json",
+      "timeline_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\audio\\prototype_audiobook_timeline.json",
       "out_name": "prototype_video.mp4"
     },
     "status": "done",
     "result": {
-      "video": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\video\\prototype_video.mp4",
+      "video": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\video\\prototype_video.mp4",
       "duration": 148.02
     },
     "error": "",
     "elapsed": 37.85,
-    "summary": "video=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\v…、duration=148.02"
+    "summary": "video=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\v…、duration=148.02"
   },
   {
     "kind": "act",
-    "msg": "#5 build_book({\"story_file\": \"C:\\\\Users\\\\85712\\\\Desktop\\\\AIGC作业_第1-8周_刘星宝\\\\aigc_final_学号待补_刘星宝\\\\data\\\\s…)",
+    "msg": "#5 build_book({\"story_file\": \"C:\\\\Users\\\\85712\\\\Desktop\\\\AIGC作业_第1-15周_聂浩洋\\\\第09-15周_课程设计\\\\data\\\\s…)",
     "ts": 1794233837.841
   },
   {
     "kind": "observe",
-    "msg": "#5 build_book done 1.68s book=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\b…、pages=8",
+    "msg": "#5 build_book done 1.68s book=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\b…、pages=8",
     "ts": 1794233839.52
   },
   {
     "idx": 5,
     "tool": "build_book",
     "args": {
-      "story_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\data\\stories\\prototype_story.json",
+      "story_file": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\data\\stories\\prototype_story.json",
       "out_name": "prototype_book.pdf"
     },
     "status": "done",
     "result": {
-      "book": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\book\\prototype_book.pdf",
+      "book": "C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\book\\prototype_book.pdf",
       "pages": 8
     },
     "error": "",
     "elapsed": 1.68,
-    "summary": "book=C:\\Users\\85712\\Desktop\\AIGC作业_第1-8周_刘星宝\\aigc_final_学号待补_刘星宝\\outputs\\b…、pages=8"
+    "summary": "book=C:\\Users\\85712\\Desktop\\AIGC作业_第1-15周_聂浩洋\\第09-15周_课程设计\\outputs\\b…、pages=8"
   }
 ]
